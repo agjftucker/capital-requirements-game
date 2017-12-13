@@ -1,0 +1,8 @@
+#!/bin/sh
+#$ -cwd
+#$ -V
+#$ -pe smp 12
+#$ -l h_rt=02:00:00
+#$ -l h_vmem=2012M
+#$ -t 301-500
+./a2.out $SGE_TASK_ID
